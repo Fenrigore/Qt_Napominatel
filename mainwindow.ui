@@ -6,27 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>452</width>
-    <height>137</height>
+    <width>507</width>
+    <height>265</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="lbl_my_text">
+   <widget class="QLabel" name="lbl_greetings">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>0</x>
       <y>0</y>
-      <width>311</width>
+      <width>501</width>
       <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Verdana</family>
-      <pointsize>16</pointsize>
+      <pointsize>32</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -36,7 +36,33 @@
      <enum>QFrame::Shadow::Plain</enum>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Ну здарова, Qt!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_hello">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hello!</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_name">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -45,7 +71,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>452</width>
+     <width>507</width>
      <height>22</height>
     </rect>
    </property>
