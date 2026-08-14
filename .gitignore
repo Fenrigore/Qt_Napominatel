@@ -1,0 +1,31 @@
+# Личные настройки Qt Creator
+*.user
+*.autosave
+
+# Папки сборки
+build/
+build-*/
+cmake-build-*/
+
+# CMake / qmake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile*
+.qmake.stash
+
+# Сгенерированное (moc/uic/rcc)
+moc_*.cpp
+moc_predefs.h
+ui_*.h
+qrc_*.cpp
+
+# Объектники и бинарники
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
