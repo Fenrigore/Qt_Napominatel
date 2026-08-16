@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <qstring.h>
+#include <QCoreApplication>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,10 +21,18 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_btn_hello_clicked();
+
+    //Установка изображения в объект label
+    void SetupLogo();
+
+    //событие изменения размера окна
+    void resizeEvent(QResizeEvent* event) override;
+
 
 private:
     Ui::MainWindow *ui;
+
+    //Логотип программы
+    QPixmap logo_pixmap_;
 };
 #endif // MAINWINDOW_H
